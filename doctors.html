@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     
+         
+
+            <!-- Doctor Registration Form -->
+           
+         <div class="card mb-4">
+            <div class="card-header">
+                <h5>add new doctor</h5>
+            </div>
+         </div>
+      
+         <div class="card-body">
+            <form id="doctor Registration">
+           <!--name email title-->
+         <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <label>full name</label> <br>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-user" style="color: blue;"></i></span>
+                <input type="text" class="form-control" placeholder="enter full name">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label>Email</label> <br>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-envelope" style="color: blue;"></i></span>
+                <input type="email" class="form-control" placeholder="enter email">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label>title</label> <br>
+            <div class="input-group">
+                
+                <span class="input-group-text"><i class="fa-solid fa-bag-shopping" style="color: blue;"></i></span>
+                <input type="text" class="form-control" placeholder="enter title">
+            </div>
+          </div>
+           </div>
+           <!--department expirence contact-->
+           <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <label>department</label> <br>
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-apartment" style="color:blue;"></i></span>
+                  <select id="deparrtment" class="form-select" required>
+                    <option value="cariology">cardiology</option>
+                    <option value="general disease"> general disease</option>
+                    <option value="Midwifery">Midwifery</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <label>expirence</label> <br>
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-calendar-days" style="color: blue;"></i></span>
+                  <input type="number" class="form-control" placeholder="enter expirence in years">
+              </div>
+            </div>
+            <div class="col-md-4">
+                <label>contact number</label> <br>
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa-sharp fa-solid fa-phone" style="color: blue;"></i></span>
+                  <input type="number" class="form-control" placeholder="enter contact-number">
+              </div>
+            </div>
+             </div>
+             <!--degree fees profile-->
+             <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <label>Degree</label> <br>
+                  <div class="input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-graduation-cap" style="color: blue;"></i></span>
+                      <input type="text" class="form-control" placeholder="enter Degree">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label>Fees</label> <br>
+                  <div class="input-group">
+                      <span class="input-group-text"><i class="fa-solid fa-dollar-sign" style="color: blue;"></i></span>
+                      <input type="email" class="form-control" placeholder="enter fees">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label>profile photo</label> <br>
+                  <div class="input-group">
+                      
+                      <span class="input-group-text"><i class="fa-solid fa-camera" style="color: blue;"></i></span>
+                      <input type="file" class="form-control" placeholder="enter title">
+                  </div>
+                </div>
+                 </div>
+                 <div class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+            </form>
+         </div>
+         <div class="card">
+            <div class="card-header">
+                <h5>list of doctors</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>title</th>
+                            <th>deparrtment</th>
+                            <th>expirence</th>
+                            <th>contact</th>
+                            <th>fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>dr-abdiaziz</td>
+                            <td>aziz@email</td>
+                            <td>cardiologist</td>
+                            <td>cardiology</td>
+                            <td>10 years</td>
+                            <td>123-456-7890</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>dr-ahmed-abdi</td>
+                            <td>ahmed@email</td>
+                            <td>neurology</td>
+                            <td>neurology</td>
+                            <td>9 years</td>
+                            <td>123-456-7890</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    
+</body>
+
+</html>

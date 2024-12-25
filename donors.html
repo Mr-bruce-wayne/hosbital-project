@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header">
+        <h6>blood donation Registration</h6>
+    </div>
+    <div class="card-body">
+        <form id="donors respiration">
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <label>full name</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-user" style="color: blue;"></i></span>
+                        <input type="text" class="form-control" placeholder="enter full name">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>contact number</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-sharp fa-solid fa-phone" style="color: blue;"></i></span>
+                        <input type="text" class="form-control" placeholder="enter contact-number">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label >blood group</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-droplet" style="color: blue;"></i></span>
+                        <input type="text" class="form-control" placeholder="A+">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <label>age</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-calendar-days" style="color: blue;"></i></span>
+                        <input type="text" class="form-control" placeholder="enter age">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>gender</label>
+                    <div class="input-group">
+                        <span class="input-group-text" ><i class="fa-solid fa-venus-mars" style="color: blue;"></i></span>
+                       <select  id="gender" class="form-select">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label >donation date</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-calendar-days" style="color: blue;"></i></span>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <label>address</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-location-dot" style="color: blue;"></i></span>
+                        <input type="text" class="form-control" placeholder="enter address">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label>medical history</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-comment" style="color: blue;"></i></span>
+                        <textarea class="form-control" placeholder="enter medical history"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label >additional describtion</label> <br>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-comment" style="color: blue;"></i></span>
+                        <textarea class="form-control" placeholder="additional describtion"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div> 
+  <div class="card">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>name</th>
+                <th>contact</th>
+                <th>bloo group</th>
+                <th>donation date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ahmed cali</td>
+                <td>435-536</td>
+                <td>A+</td>
+                <td>2024-4-6</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>nashhad axmed</td>
+                <td>324-977</td>
+                <td>o-</td>
+                <td>2024-6-7</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>abdinaasis cali</td>
+                <td>435-756</td>
+                <td>AB+</td>
+                <td>2024-4-7</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>adno abdi</td>
+                <td>234-765</td>
+                <td>A+</td>
+                <td>2024-4-12</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>abdihakin ismail</td>
+                <td>24-657</td>
+                <td>A-</td>
+                <td>2024-4-13</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
